@@ -8,8 +8,19 @@
 
 import UIKit
 
+
+
+protocol PizzaInterface  {
+    func calculatePizzaTime(pizzas: [Pizza]) -> Int
+    func addPizza(pizza: Pizza) -> Void
+}
+
+
+
 class ViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
